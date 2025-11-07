@@ -4,8 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "node index.ts",
-        "start": "nodemon index.ts"
+        "dev": "tsx index.ts",
+        "start": "nodemon --exec tsx index.ts"
     },
     "keywords": [],
     "author": "",
@@ -14,7 +14,14 @@
     "dependencies": {
         "@clerk/clerk-sdk-node": "^4.13.23",
         "@clerk/express": "^1.7.46",
+        "@modelcontextprotocol/sdk": "^1.21.1",
         "dotenv": "^17.2.3",
         "express": "^5.1.0"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.5",
+        "@types/node": "^24.10.0",
+        "nodemon": "^3.1.10",
+        "tsx": "^4.7.0"
     }
 }
